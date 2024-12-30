@@ -570,7 +570,59 @@ section {
 /* QUALIDADE */
 /* QUALIDADE */
 /* QUALIDADE */
+#qualidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.qualidade__titulo{
+    margin: 2em 0;
+}
+
+.qualidade__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 80%;
+}
+
+.qualidade__p{
+    border: 2px solid var(--laranja-escuro);
+    border-radius: 12px;
+    padding: 1em;
+    text-align: center;
+}
+
+.qualidade__selos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.qualidade__selo{
+    text-decoration: none;
+    text-align: center;
+}
+
+.qualidade__selo img{
+    width: 100%;
+    border: 2px solid var(--laranja-escuro);
+    border-radius: 6px;
+    padding: 0.5em;
+}
+
+.qualidade__selo img:hover, .qualidade__selo img:focus{
+    transition: 1s;
+    transform: scale(1.01);
+    border: 2px solid var(--laranja-claro);
+    cursor: pointer;
+    background-color: var(--cinza-claro);
+}
 /* CONTATO */
 /* CONTATO */
 /* CONTATO */
@@ -672,7 +724,12 @@ section {
     }
 
     .sobre__card {
-        width: 100%;
+        width: 80%;
+        padding: 0.5em;
+    }
+
+    .sobre__card-cargo{
+        width: 50%;
     }
 
     .sobre__card-cargo img {
@@ -680,7 +737,7 @@ section {
     }
 
     .sobre__card-cargo h4 {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     /* PRODUTOS */
@@ -690,11 +747,33 @@ section {
     /* LOGISTICA */
     /* LOGISTICA */
     /* LOGISTICA */
+    .logistica__img{
+        width: 60%;
+        height: auto;
+    }
 
-    /* QUALIDADE */
-    /* QUALIDADE */
-    /* QUALIDADE */
+    .logistica__baixo{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .logistica__baixo-item{
+        width: 70%;
+    }
+    /* QUALIDADE */
+    /* QUALIDADE */
+    /* QUALIDADE */
+    .qualidade__container{
+        width: 60%;
+    }
+
+    .qualidade__selos{
+        flex-direction: column;
+    }
+    
+    .qualidade__selo img{
+        width: 280px;
+    }
     /* CONTATO */
     /* CONTATO */
     /* CONTATO */
