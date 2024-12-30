@@ -1,0 +1,113 @@
+nav.navbar{
+    width: 90%;
+    border-radius: 12px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    z-index: 9999;
+}
+
+.navbar img{
+    height: 40px;
+    width: auto;
+}
+
+.traducao-div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.2em;
+}
+
+.navbar-img-traducao{
+    width: auto; 
+    max-width: 30px; 
+    height: auto; 
+    max-height: 30px;
+    cursor: pointer; 
+}
+
+.navbar-img-traducao:hover, .navbar-img-traducao:focus{
+    transform: scale(1.01);
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+
+.nav-link{
+    color: var(--preto) !important;
+}
+
+.nav-link:hover{
+    transform: scale(1.01) !important;
+    color: var(--laranja-escuro) !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--laranja-escuro) !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em; 
+    height: 1.5em; 
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+    background-image: none !important;
+}
+
+.toggler-icon-aberto{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-image: url(../assets/menu-fechado.webp) !important;
+}
+
+.toggler-icon-fechado{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    background-image: url(../assets/menu-aberto.webp) !important;
+}
+
+.navbar .navbar-toggler:focus {
+    outline: none !important; 
+    box-shadow: none !important; 
+}
+
+@media (max-width: 920px) {
+    .navbar-nav {
+        justify-content: flex-start !important; 
+        align-items: flex-start; 
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        text-align: left; 
+    }
+
+    .nav-item {
+        width: 100%; 
+    }
+
+    .nav-link {
+        text-align: left; 
+        padding: 0.5rem 0; 
+    }
+}
