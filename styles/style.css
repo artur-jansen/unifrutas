@@ -450,7 +450,7 @@ section {
     text-align: center;
 }
 
-#prTotal{
+#prTotal {
     width: 100%;
     min-height: 200px;
     padding: 2em 4em;
@@ -458,7 +458,7 @@ section {
     align-items: center;
 }
 
-.produtos__branco{
+.produtos__branco {
     background-color: var(--branco);
 }
 
@@ -504,12 +504,12 @@ section {
 /* LOGISTICA */
 /* LOGISTICA */
 /* LOGISTICA */
-.logistica__titulo{
+.logistica__titulo {
     text-align: center;
     margin: 2em 0;
 }
 
-.logistica__container{
+.logistica__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,7 +517,7 @@ section {
     gap: 3em;
 }
 
-.logistica__cima{
+.logistica__cima {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -525,7 +525,7 @@ section {
     gap: 3em;
 }
 
-.logistica__p{
+.logistica__p {
     border: 2px solid var(--laranja-escuro);
     border-radius: 12px;
     padding: 1em;
@@ -533,12 +533,12 @@ section {
     text-align: center;
 }
 
-.logistica__img{
+.logistica__img {
     width: 50%;
     height: auto;
 }
 
-.logistica__baixo{
+.logistica__baixo {
     background-color: var(--laranja-escuro);
     display: flex;
     flex-wrap: wrap;
@@ -548,7 +548,7 @@ section {
     gap: 1em;
 }
 
-.logistica__baixo-item{
+.logistica__baixo-item {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -556,7 +556,7 @@ section {
     width: 30%;
 }
 
-.logistica__baixo-item h3{
+.logistica__baixo-item h3 {
     background: var(--preto);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -564,24 +564,25 @@ section {
     font-size: 1.3em;
 }
 
-.logistica__baixo-item p{
+.logistica__baixo-item p {
     color: var(--branco);
 }
+
 /* QUALIDADE */
 /* QUALIDADE */
 /* QUALIDADE */
-#qualidade{
+#qualidade {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.qualidade__titulo{
+.qualidade__titulo {
     margin: 2em 0;
 }
 
-.qualidade__container{
+.qualidade__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -590,39 +591,41 @@ section {
     width: 80%;
 }
 
-.qualidade__p{
+.qualidade__p {
     border: 2px solid var(--laranja-escuro);
     border-radius: 12px;
     padding: 1em;
     text-align: center;
 }
 
-.qualidade__selos{
+.qualidade__selos {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2em;
 }
 
-.qualidade__selo{
+.qualidade__selo {
     text-decoration: none;
     text-align: center;
 }
 
-.qualidade__selo img{
+.qualidade__selo img {
     width: 100%;
     border: 2px solid var(--laranja-escuro);
     border-radius: 6px;
     padding: 0.5em;
 }
 
-.qualidade__selo img:hover, .qualidade__selo img:focus{
+.qualidade__selo img:hover,
+.qualidade__selo img:focus {
     transition: 1s;
     transform: scale(1.01);
     border: 2px solid var(--laranja-claro);
     cursor: pointer;
     background-color: var(--cinza-claro);
 }
+
 /* CONTATO */
 /* CONTATO */
 /* CONTATO */
@@ -632,6 +635,110 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato__titulo {
+    margin: 2em 0;
+}
+
+.contato__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    gap: 2em;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: var(--laranja-escuro);
+    height: 100%;
+    gap: 1em;
+}
+
+#contactForm h3 {
+    text-align: center;
+    background: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#contactForm div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm button {
+    background-color: var(--branco);
+    padding: 1em;
+    border-radius: 8px;
+    border: 2px solid var(--laranja-escuro);
+    width: 70%;
+    text-decoration: none;
+    color: var(--laranja-escuro);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.contato__banner {
+    background-color: var(--laranja-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 80%;
+}
+
+.contato__banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+.contato__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.contato__infos_cima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.contato__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    gap: 0.1em;
+}
+
+.contato__info p {
+    margin: 0;
+}
+
+.contato__infos-baixo {
+    background-color: #c13c10;
+    padding: 0.3em;
+    border-radius: 6px;
+    color: var(--branco);
 }
 
 @media (max-width: 920px) {
@@ -728,7 +835,7 @@ section {
         padding: 0.5em;
     }
 
-    .sobre__card-cargo{
+    .sobre__card-cargo {
         width: 50%;
     }
 
@@ -747,33 +854,35 @@ section {
     /* LOGISTICA */
     /* LOGISTICA */
     /* LOGISTICA */
-    .logistica__img{
+    .logistica__img {
         width: 60%;
         height: auto;
     }
 
-    .logistica__baixo{
+    .logistica__baixo {
         flex-direction: column;
         align-items: center;
     }
 
-    .logistica__baixo-item{
+    .logistica__baixo-item {
         width: 70%;
     }
+
     /* QUALIDADE */
     /* QUALIDADE */
     /* QUALIDADE */
-    .qualidade__container{
+    .qualidade__container {
         width: 60%;
     }
 
-    .qualidade__selos{
+    .qualidade__selos {
         flex-direction: column;
     }
-    
-    .qualidade__selo img{
+
+    .qualidade__selo img {
         width: 280px;
     }
+
     /* CONTATO */
     /* CONTATO */
     /* CONTATO */
