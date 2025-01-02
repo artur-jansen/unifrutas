@@ -824,13 +824,18 @@ section {
         align-items: center;
     }
 
+    .home__div{
+        align-items: center;
+        padding: 0 2em;
+    }
+
     .home__titulo {
         font-size: 2em;
-        width: 100%;
+        width: 80%;
     }
 
     .home__p {
-        width: 100%;
+        width: 80%;
         font-size: 1em;
     }
 
@@ -841,7 +846,6 @@ section {
     .home__cta-baixo {
         width: 200px;
         font-size: 0.7em;
-        gap: 0.5em;
     }
 
     /* SOBRE */
@@ -910,6 +914,7 @@ section {
 
     .qualidade__selo img {
         width: 250px;
+        height: 250px;
     }
 
     /* CONTATO */
