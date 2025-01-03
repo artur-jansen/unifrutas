@@ -214,6 +214,20 @@ section {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    animation: mover 2s infinite ease-in-out;
+    text-decoration: none;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
 }
 
 /* SOBRE */
@@ -224,10 +238,15 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(-7deg, #E84E1B 56%, #008D36 56%);
 }
 
 .sobre__titulo {
     margin: 2em 0;
+    background: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .sobre__container {
@@ -258,10 +277,26 @@ section {
     width: 40%;
 }
 
-.sobre__p {
-    background-color: var(--cinza-claro);
+.sobre__paragrafos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__p1, .sobre__p2 {
     padding: 1em;
     border-radius: 12px;
+    box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
+    color: var(--branco);
+}
+
+.sobre__p1{
+    background-color: var(--verde-escuro);
+}
+
+.sobre__p2{
+    background-color: var(--laranja-escuro);
 }
 
 .sobre__div-botoes {
@@ -273,6 +308,7 @@ section {
 }
 
 .sobre1__btn {
+    box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
     background-color: var(--laranja-escuro);
     padding: 1em;
     border-radius: 8px;
@@ -291,31 +327,21 @@ section {
 .sobre1__btn:focus {
     transition: 1s;
     transform: scale(1.01);
-    background-color: transparent;
-    color: var(--laranja-escuro);
-    border: 2px solid var(--laranja-escuro);
-}
-
-
-.sobre1__btn:hover .sobre1__btn-link {
-    color: var(--laranja-escuro);
-}
-
-.sobre1__btn:focus .sobre1__btn-link {
-    color: var(--laranja-escuro);
+    background-color: #d24212;
 }
 
 .sobre2__btn {
-    background-color: var(--branco);
+    box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
+    background-color: var(--laranja-escuro);
     padding: 1em;
     border-radius: 8px;
-    border: 2px solid var(--laranja-escuro);
+    border: 2px solid var(--branco);
     width: 100%;
 }
 
 .sobre2__btn-link {
     text-decoration: none;
-    color: var(--laranja-escuro);
+    color: var(--branco);
     font-weight: bold;
     font-size: 1em;
 }
@@ -324,56 +350,47 @@ section {
 .sobre2__btn:focus {
     transition: 1s;
     transform: scale(1.01);
-    background-color: #E84E1B;
-    color: var(--branco);
-    border: 2px solid var(--laranja-escuro);
+    background-color: #d24212;
 }
 
-.sobre2__btn:hover .sobre2__btn-link {
-    color: var(--branco);
-}
-
-.sobre2__btn:focus .sobre2__btn-link {
-    color: var(--branco);
+.sobre__container h3{
+    background: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .sobre__div-cards {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
+    width: 80%;
 }
 
 .sobre__card {
-    background-color: var(--cinza-claro);
+    background-color: #ffffffbe;
     padding: 1em;
-    border: 3px solid var(--laranja-escuro);
+    border: 3px solid var(--branco);
     border-radius: 12px;
-    width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 2em;
 }
 
-.sobre__card-cargo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 3px solid var(--laranja-escuro);
-    border-radius: 12px;
+.sobre__card img{
+    width: 90%;
 }
 
-.sobre__card-cargo h4 {
+.sobre__card h4 {
     font-weight: 600 !important;
-    color: var(--branco) !important;
-    background-color: var(--laranja-escuro);
+    color: var(--preto) !important;
     margin-bottom: 0 !important;
-    border-radius: 0 0 10px 10px;
     text-align: center;
-    width: 100%;
+    width: 80%;
+    border-bottom: 2px solid var(--laranja-escuro);
 }
 
 .sobre__card-infos {
@@ -415,7 +432,7 @@ section {
 
 .sobre__dado i {
     font-size: 3em;
-    background: linear-gradient(to bottom, #E84E1B 0%, #FBB040 100%);
+    background: linear-gradient(14deg, #ffffff 0%, #dddddd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -428,7 +445,7 @@ section {
 
 .barrinha {
     width: 2px;
-    background-color: var(--laranja-escuro);
+    background-color: var(--branco);
     height: 100px;
 }
 
@@ -757,6 +774,10 @@ section {
     /* SOBRE */
     /* SOBRE */
     .sobre__container-cima {
+        flex-direction: column;
+    }
+
+    .sobre__div-cards{
         flex-direction: column;
     }
 
