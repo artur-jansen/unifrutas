@@ -369,7 +369,7 @@ section {
 }
 
 .sobre__card {
-    background-color: #ffffffbe;
+    background-color: #f3f3f3;
     padding: 1em;
     border: 3px solid var(--branco);
     border-radius: 12px;
@@ -781,8 +781,12 @@ section {
         flex-direction: column;
     }
 
+    .sobre__img{
+        width: 60%;
+    }
+
     .sobre__div-texto {
-        width: 80%;
+        width: 60%;
     }
 
     .sobre__dados {
@@ -864,11 +868,6 @@ section {
         width: 80%;
     }
 
-    .home__cta-baixo {
-        width: 200px;
-        font-size: 0.7em;
-    }
-
     /* SOBRE */
     /* SOBRE */
     /* SOBRE */
@@ -877,7 +876,7 @@ section {
     }
 
     .sobre__div-texto {
-        width: 70%;
+        width: 60%;
     }
 
     .sobre__div-botoes {
@@ -885,7 +884,7 @@ section {
     }
 
     .sobre__card {
-        width: 80%;
+        width: 60%;
         padding: 0.5em;
     }
 
