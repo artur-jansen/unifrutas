@@ -1,0 +1,128 @@
+footer{
+    background-color: #004938;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__primeiro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+    gap: 2em;
+    width: 100%;
+}
+
+.footer__primeiro-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer__primeiro-links img{
+    width: auto;
+    height: auto;
+}
+
+.footer__primeiro-lista-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer__primeiro-link{
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+}
+
+.menus{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5em;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    gap: 1em;
+}
+
+.menu h2{
+    font-size: 1.3em;
+    background: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.menu__lista-p{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.menu__lista-p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+.menu__lista-p a:hover{
+    transition: 1s;
+    transform: scale(1.01);
+    color: #E84E1B;
+}
+
+.footer__p-meio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    background-color: #014535;
+    color: #fff;
+}
+
+.footer__ultima{
+    background-color: #03392D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    width: 100%;
+}
+
+@media (max-width: 920px) {
+    .footer__primeiro{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .menus{
+        flex-direction: column;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .menu{
+        align-items: center;
+    }
+
+    .menu__lista-p{
+        align-items: center;
+    }
+}

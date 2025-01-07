@@ -866,6 +866,7 @@ section {
 
     .home__btn {
         width: 80%;
+        padding: 0.5em;
     }
 
     /* SOBRE */
@@ -900,10 +901,20 @@ section {
         font-size: 1em;
     }
 
-    /* PRODUTOS */
-    /* PRODUTOS */
-    /* PRODUTOS */
+    .sobre1__btn, .sobre2__btn{
+        padding: 0.5em;
+    }
 
+    /* PRODUTOS */
+    /* PRODUTOS */
+    /* PRODUTOS */
+    .produtos__div{
+        padding: 0 2em;
+    }
+
+    .produto__btn{
+        padding: 0.5em;
+    }
     /* LOGISTICA */
     /* LOGISTICA */
     /* LOGISTICA */
@@ -946,6 +957,10 @@ section {
 
     #contactForm{
         width: 60%;
+    }
+
+    #contactForm button {
+        padding: 0.5em;
     }
 
     .contato__banner{
