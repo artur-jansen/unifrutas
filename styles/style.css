@@ -202,11 +202,9 @@ section {
 }
 
 .home__cta-baixo {
-    border: 2px solid var(--laranja-escuro);
-    border-radius: 8px;
     color: var(--branco);
-    padding: 0.5em;
     gap: 1em;
+    font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: space-between;
