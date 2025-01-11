@@ -216,6 +216,11 @@ section {
     text-decoration: none;
 }
 
+.home__cta-baixo:hover, .home__cta-baixo:focus{
+    transition: 1s;
+    color: var(--laranja-claro);
+}
+
 @keyframes mover {
     0% {
         transform: translateY(0);
@@ -265,6 +270,8 @@ section {
 
 .sobre__img {
     width: 30%;
+    border: 4px solid var(--laranja-escuro);
+    border-radius: 12px;
 }
 
 .sobre__div-texto {
@@ -362,14 +369,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2em;
-    width: 80%;
+    width: 100%;
 }
 
 .sobre__card {
     background-color: #f3f3f3;
     padding: 1em;
-    border: 3px solid var(--branco);
+    border: 4px solid #c13c10;
     border-radius: 12px;
     height: auto;
     display: flex;
@@ -387,7 +393,7 @@ section {
     color: var(--preto) !important;
     margin-bottom: 0 !important;
     text-align: center;
-    width: 80%;
+    width: 100%;
     border-bottom: 2px solid var(--laranja-escuro);
 }
 
@@ -911,6 +917,11 @@ section {
     .home__btn {
         width: 80%;
         padding: 0.5em;
+    }
+
+    .home__cta-baixo{
+        font-size: 1.5em;
+        bottom: 15px;
     }
 
     /* SOBRE */
