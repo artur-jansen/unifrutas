@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unifrutas - Exportação de Manga</title>
+    <title>Unifrutas - Exportação de Limão</title>
     <link rel="shortcut icon" href="../assets/logo-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/pagina-produto.css">
+    <link rel="stylesheet" href="../styles/limao.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -64,25 +65,26 @@
         </a>
     </button>
     <main>
-        <div class="container__topo">
-            <img class="container__topo-img" src="../assets/manga3d.png" alt="Como importar manga">
-            <h1 class="container__topo-h1">MANGA</h1>
+        <div class="container__topo-limao">
+            <img class="container__topo-img" src="../assets/limao-home.png" alt="Como importar manga">
+            <h1 class="container__topo-h1">LIMÃO TAHITI</h1>
         </div>
         <div class="container">
             <div class="div__cima">
                 <div class="div__infos">
-                    <div class="especificacoes">
+                    <div class="especificacoes" id="limao-divs">
                         <h2>ESPECIFICAÇÕES</h2>
                         <div class="especificacoes__lista">
-                            <p>Manga keith</p>
-                            <p>Casca verde-avermelhada e polpa amarela intensa</p>
-                            <p>Polpa firme e sem fiapos</p>
-                            <p>Doce com leve acidez</p>
-                            <p>Média de 400-600g por unidade</p>
+                            <p>Limão tahiti</p>
+                            <p>Ótima fonte de vitamina C </p>
+                            <p>Ricos em vitaminas A, B1, B2, B3 e B5</p>
+                            <p>Fortes em minerais como  ferro, fósforo, zinco, magnésio e potássio. Fonte de fibras </p>
+                            <p>Rico em antioxidantes como os flavonoides
+                            </p>
                         </div>
                     </div>
                     <div class="div__dupla">
-                        <div class="nutricional">
+                        <div class="nutricional" id="limao-divs">
                             <h2>TABELA NUTRICIONAL</h2>
                             <div class="nutricional__lista">
                                 <p>Calorias: 60kcal</p>
@@ -90,15 +92,15 @@
                             </div>
                         </div>
                         <div class="sazonalidade">
-                            <h2>SAZONALIDADE</h2>
-                            <p>Jan-Fev: Baixa</p>
-                            <p>Mar-Abr: Regular</p>
-                            <p>Mai-Jul: Média</p>
-                            <p>Ago-Dez: Alta</p>
+                            <h2 id="limao-divs">SAZONALIDADE</h2>
+                            <p id="limao-divs">Jan-Fev: Media</p>
+                            <p id="limao-divs">Mar-Abr: Alta</p>
+                            <p id="limao-divs">Mai-Jul: Regular</p>
+                            <p id="limao-divs">Ago-Dez: Baixa</p>
                         </div>
                     </div>
                 </div>
-                <img class="img__mangas" src="../assets/mangas.png" alt="Melhor Manga no Brasil">
+                <img class="img__mangas" src="../assets/limoes.png" alt="Melhor Manga no Brasil">
             </div>
             <div class="div__baixo">
                 <h3>AQUI RESPONDEMOS SUAS DÚVIDAS</h3>
@@ -108,7 +110,7 @@
                             <button class="accordion-button accordion__header" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                 aria-controls="collapseOne">
-                                A Manga é organica 
+                                O Limão é orgãnico ? 
                             </button>
                         </h3>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -125,18 +127,15 @@
                             <button class="accordion-button collapsed accordion__header" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
-                                Quanto tempo dura o transporte 
+                                Quanto tempo dura o transporte de manga ?
                             </button>
                         </h3>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body accordion__body">
-                                A excelência é nosso compromisso com a qualidade em cada detalhe, desde o
-                                atendimento até o produto final. Valorizamos a autenticidade, oferecendo peças que
-                                refletem o estilo único de cada cliente e traduzem sua personalidade. A confiança é
-                                a base das nossas relações, construindo laços transparentes e sólidos com nossos
-                                clientes e parceiros. Além disso, buscamos sempre a inovação, estando à frente das
-                                tendências e oferecendo soluções que atendem às necessidades do homem moderno.
+                                Depende do modal : Aéreo -desde a colheita até a chegada no cliente aproximadamente 7 dias .
+                                Marítimo – da colheita até a chegada no cliente aproximadamente 21 dias.
+                                
                             </div>
                         </div>
                     </div>
@@ -145,18 +144,12 @@
                             <button class="accordion-button collapsed accordion__header" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
-                                Quais Mercados vocês atendem 
+                                Quais mercaods voces atendem ?
                             </button>
                         </h3>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
-                            <div class="accordion-body accordion__body">
-                                Oferecemos aos homens de Feira de Santana uma experiência única em moda masculina,
-                                unindo estilo, qualidade e conforto. Nosso objetivo é ser referência no mercado
-                                local, proporcionando peças que acompanham as tendências atuais, mas que também
-                                valorizam a personalidade e o bom gosto de cada cliente. Trabalhamos para entregar
-                                um atendimento personalizado, construindo uma relação de confiança e satisfação com
-                                quem escolhe se vestir bem e com praticidade.
+                            <div class="accordion-body accordion__body">Europa e Mercosul
                             </div>
                         </div>
                     </div>
@@ -165,20 +158,62 @@
                             <button class="accordion-button collapsed accordion__header" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                 aria-controls="collapseFour">
-                                Quais Certificados a Manga possui ?
+                                Quais certificações o limão possui ?
                             </button>
                         </h3>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body accordion__body">
-                                Na nossa loja, oferecemos uma ampla variedade de roupas e acessórios para atender ao
-                                estilo e necessidades do homem moderno. Temos camisas, calças, bermudas, blazers,
-                                suéteres, jaquetas, sapatos e muito mais, com peças que combinam conforto, qualidade
-                                e elegância. Cada item é cuidadosamente selecionado para proporcionar o melhor em
-                                moda, garantindo opções versáteis e de alta qualidade para todas as ocasiões.
+                                Global Gap e Grasp 
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item accordion__item">
+                        <h3 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed accordion__header" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                Local de produção
+                            </button>
+                        </h3>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body accordion__body">
+                                Sul da Bahia 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordion__item">
+                        <h3 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed accordion__header" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix">
+                                Embalamento
+                            </button>
+                        </h3>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body accordion__body">
+                                Processo efetuado minuciosamente, mesclando a tecnologia através de maquinário apropriado e pessoas qualificadas para o manejo da fruta. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordion__item">
+                        <h3 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed accordion__header" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                                aria-controls="collapseSeven">
+                                Armazenamento
+                            </button>
+                        </h3>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body accordion__body">
+                                Após embalamento, mantida em câmera fria numa temperatura 8 ° C. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 <button class="produto__btn"><a class="produto__btn-link" href="wa.me">QUERO
                         EXPORTAR</a></button>

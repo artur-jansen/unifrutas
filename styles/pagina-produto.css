@@ -144,13 +144,14 @@ main {
     background: linear-gradient(to right, #E84E1B 0%, #FBB040 100%);
 }
 
-.container__topo h1 {
+.container__topo-h1 {
     font-size: 4em;
     color: var(--branco);
+    text-align: center;
 }
 
-.container__topo img {
-    width: 10%;
+.container__topo-img {
+    width: 20%;
 }
 
 .container {
@@ -160,7 +161,7 @@ main {
     gap: 2em;
     padding: 2em 4em;
 }
-
+  
 .div__cima {
     display: flex;
     gap: 2em;
@@ -188,7 +189,6 @@ main {
 
 .especificacoes,
 .nutricional {
-    background-color: var(--laranja-escuro);
     color: var(--branco);
     padding: 1em;
     border-radius: 12px;
@@ -217,7 +217,6 @@ main {
 
 .sazonalidade h2,
 .sazonalidade p {
-    background-color: var(--laranja-escuro);
     padding: 0.5em;
     border-radius: 12px;
     margin: 0;
@@ -259,32 +258,10 @@ main {
     font-size: 0.8em !important;
 }
 
-.accordion-button.collapsed {
-    background-color: var(--laranja-escuro) !important;
-    box-shadow: none !important;
-    color: var(--branco) !important;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: var(--laranja-escuro) !important;
-    box-shadow: none !important;
-    border-radius: 12px 12px 0 0 !important;
-    color: var(--branco) !important;
-}
-
 .accordion__body {
     background-color: var(--cinza-claro);
     color: var(--preto) !important;
     border-radius: 0 0 12px 12px !important;
-}
-
-.produto__btn {
-    box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
-    background-color: var(--laranja-escuro);
-    padding: 1em;
-    border-radius: 8px;
-    border: 2px solid var(--laranja-escuro);
-    width: 30%;
 }
 
 .produto__btn-link {
@@ -294,16 +271,9 @@ main {
     font-size: 1em;
 }
 
-.produto__btn:hover,
-.produto__btn:focus {
-    transition: 1s;
-    transform: scale(1.01);
-    background-color: #d24212;
-}
-
 @media (max-width: 920px) {
-    .container__topo img {
-        width: 15%;
+    .container__topo-img {
+        width: 35%;
     }
 
     .div__cima {
@@ -346,12 +316,12 @@ main {
         padding: 2em 3em;
     }
 
-    .container__topo img {
-        width: 20%;
+    .container__topo-img {
+        width: 50%;
     }
 
-    .container__topo h1 {
-        font-size: 2.5em;
+    .container__topo-h1 {
+        font-size: 2em;
     }
 
     .div__cima {

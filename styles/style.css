@@ -209,7 +209,7 @@ section {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     animation: mover 2s infinite ease-in-out;
@@ -471,20 +471,30 @@ section {
     padding: 2em 4em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+#prTotal img{
+    width: 30%;
 }
 
 .produtos__branco {
     background-color: var(--branco);
+    flex-direction: row-reverse;
+}
+
+.produtos__branco div{
+    align-items: end;
 }
 
 .produtos__div {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: start;
     justify-content: center;
     gap: 1em;
     color: var(--branco);
-    width: 400px;
+    width: 500px;
 }
 
 .produtos__div h3 {
@@ -514,6 +524,27 @@ section {
     transform: scale(1.01);
     background-color: #ffffff2d;
     color: var(--branco);
+}
+
+.limaoTahiti-h3{
+    background: linear-gradient(to bottom, #8FBF2A 0%, #066129 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    text-align: end;
+}
+
+.limaoTahiti-p{
+    color: #8FBF2A;
+    text-align: end;
+}
+
+#btn__limaoTahiti{
+    border: 2px solid #8FBF2A;
+}
+
+#btn__limaoTahiti-link{
+    color: #8FBF2A;
 }
 
 /* LOGISTICA */
@@ -799,6 +830,21 @@ section {
     /* PRODUTOS */
     /* PRODUTOS */
     /* PRODUTOS */
+    #prTotal img{
+        width: 50%;
+    }
+
+    #prTotal, .produtos__branco {
+        flex-direction: column-reverse;
+    }
+
+    .produtos__div, .produtos__branco div, #prTotal{
+        align-items: center;
+    }
+
+    .limaoTahiti-h3, .limaoTahiti-p, #prTotal p{
+        text-align: center;
+    }
 
     /* LOGISTICA */
     /* LOGISTICA */
@@ -906,8 +952,12 @@ section {
     /* PRODUTOS */
     /* PRODUTOS */
     /* PRODUTOS */
+    #prTotal{
+        padding: 2em 2em;
+    }
+
     .produtos__div{
-        padding: 0 2em;
+        width: 100%;
     }
 
     .produto__btn{

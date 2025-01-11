@@ -1,0 +1,43 @@
+.container__topo-limao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 6em 2em 2em 2em;
+    width: 100vw;
+    background: linear-gradient(to right, #8FBF2A 0%, #066129 100%);
+}
+
+.accordion-button.collapsed {
+    background-color: #8FBF2A !important;
+    box-shadow: none !important;
+    color: var(--branco) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #8FBF2A !important;
+    box-shadow: none !important;
+    border-radius: 12px 12px 0 0 !important;
+    color: var(--branco) !important;
+}
+
+#limao-divs{
+    background-color: #8FBF2A;
+}
+
+.produto__btn {
+    box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
+    background-color: #8FBF2A;
+    padding: 1em;
+    border-radius: 8px;
+    border: 2px solid #8FBF2A;
+    width: 30%;
+}
+
+.produto__btn:hover,
+.produto__btn:focus {
+    transition: 1s;
+    transform: scale(1.01);
+    background-color: #78a021;
+}
