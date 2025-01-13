@@ -79,7 +79,7 @@ footer{
     font-size: 1em;
 }
 
-.menu__lista-p a:hover{
+.menu__lista-p a:hover, .footer__primeiro-link:hover{
     transition: 1s;
     transform: scale(1.01);
     color: #E84E1B;

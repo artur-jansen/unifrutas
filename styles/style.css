@@ -575,13 +575,14 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 3em;
+    padding: 0 2em;
 }
 
 .logistica__p {
     border: 2px solid var(--laranja-escuro);
     border-radius: 12px;
     padding: 1em;
-    width: 60%;
+    width: 90%;
     text-align: center;
 }
 
@@ -653,7 +654,7 @@ section {
 .qualidade__selos {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2em;
 }
 
@@ -663,10 +664,13 @@ section {
 }
 
 .qualidade__selo img {
-    width: 100%;
+    width: 250px;
+    max-width: 100%;
     border: 2px solid var(--laranja-escuro);
     border-radius: 6px;
     padding: 0.5em;
+    height: 250px;
+    max-height: 100%;
 }
 
 .qualidade__selo img:hover,
@@ -700,50 +704,8 @@ section {
 .contato__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 2em;
-    gap: 2em;
-}
-
-#contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 1em;
-    border-radius: 12px;
-    background-color: var(--laranja-escuro);
-    height: 100%;
-    gap: 1em;
-}
-
-#contactForm h3 {
-    text-align: center;
-    background: var(--branco);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-
-#contactForm div {
-    display: flex;
-    flex-direction: column;
-}
-
-#contactForm button {
-    background-color: var(--branco);
-    padding: 1em;
-    border-radius: 8px;
-    border: 2px solid var(--laranja-escuro);
-    width: 70%;
-    text-decoration: none;
-    color: var(--laranja-escuro);
-    font-weight: bold;
-    font-size: 1em;
-}
-
-#message, #name, #email{
-    width: 300px;
+    padding: 0 2em;
 }
 
 .contato__banner {
@@ -863,30 +825,8 @@ section {
     /* CONTATO */
     /* CONTATO */
     /* CONTATO */
-    .contato__container {
-        flex-direction: column;
-        padding: 2em;
-    }
-
-    #contactForm{
-        width: 50%;
-    }
-
-    #message, #name, #email{
-        width: 280px;
-    }
-
-    .contato__banner{
-        width: 70%;
-    }
-
-    .contato__info{
-        font-size: 0.8em;
-    }
-
     .contato__infos-baixo{
         text-align: center;
-        font-size: 0.9em;
     }
 }
 
@@ -928,11 +868,11 @@ section {
     /* SOBRE */
     /* SOBRE */
     .sobre__img {
-        width: 60%;
+        width: 80%;
     }
 
     .sobre__div-texto {
-        width: 60%;
+        width: 80%;
     }
 
     .sobre__div-botoes {
@@ -940,7 +880,7 @@ section {
     }
 
     .sobre__card {
-        width: 60%;
+        width: 80%;
         padding: 0.5em;
     }
 
@@ -978,7 +918,7 @@ section {
     /* LOGISTICA */
     /* LOGISTICA */
     .logistica__img {
-        width: 60%;
+        width: 80%;
         height: auto;
     }
 
@@ -1004,26 +944,14 @@ section {
 
     .qualidade__selo img {
         width: 250px;
-        height: 250px;
+        height: 220px;
     }
 
     /* CONTATO */
     /* CONTATO */
     /* CONTATO */
-    #message, #name, #email{
-        width: 200px;
-    }
-
-    #contactForm{
-        width: 60%;
-    }
-
-    #contactForm button {
-        padding: 0.5em;
-    }
-
     .contato__banner{
-        width: 60%;
+        width: 100%;
     }
 
     .contato__infos_cima{
