@@ -1,0 +1,43 @@
+.container__topo-gengibre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 6em 2em 2em 2em;
+    width: 100vw;
+    background: linear-gradient(to right, #D09D73 0%, #AC643D 100%);
+}
+
+.accordion-button.collapsed {
+    background-color: #D09D73 !important;
+    box-shadow: none !important;
+    color: var(--branco) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #D09D73 !important;
+    box-shadow: none !important;
+    border-radius: 12px 12px 0 0 !important;
+    color: var(--branco) !important;
+}
+
+#gengibre-divs{
+    background-color: #D09D73;
+}
+
+.produto__btn {
+    box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
+    background-color: #D09D73;
+    padding: 1em;
+    border-radius: 8px;
+    border: 2px solid #D09D73;
+    width: 50%;
+}
+
+.produto__btn:hover,
+.produto__btn:focus {
+    transition: 1s;
+    transform: scale(1.01);
+    background-color: #78a021;
+}

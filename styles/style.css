@@ -553,6 +553,27 @@ section {
     color: #8FBF2A;
 }
 
+.gengibre-h3{
+    background: linear-gradient(to bottom, #D09D73 0%, #AC643D 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+    text-align: end;
+}
+
+.gengibre-p{
+    color: #D09D73;
+    text-align: end;
+}
+
+#btn__gengibre{
+    border: 2px solid #D09D73;
+}
+
+#btn__gengibre-link{
+    color: #D09D73;
+}
+
 /* LOGISTICA */
 /* LOGISTICA */
 /* LOGISTICA */
