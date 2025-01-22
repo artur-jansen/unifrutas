@@ -508,7 +508,7 @@ section {
 }
 
 .produtos__pr5{
-    background: linear-gradient(to bottom, #04cd26 0%, #b603ec 100%);
+    background: linear-gradient(to bottom, #b343d5 0%, #c97ae1 100%);
 }
 
 .produtos__div {
@@ -680,7 +680,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 2em;
-    width: 80%;
+    width: 60%;
 }
 
 .qualidade__p {

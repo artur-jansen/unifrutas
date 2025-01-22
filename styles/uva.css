@@ -6,32 +6,32 @@
     gap: 2em;
     padding: 6em 2em 2em 2em;
     width: 100vw;
-    background: linear-gradient(to right, #04cd26 0%, #b603ec 100%);
+    background: linear-gradient(to right, #b343d5 0%, #c97ae1 100%);
 }
 
 .accordion-button.collapsed {
-    background-color: #bba1c4 !important;
+    background-color: #b343d5 !important;
     box-shadow: none !important;
     color: var(--branco) !important;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #bba1c4 !important;
+    background-color: #b343d5 !important;
     box-shadow: none !important;
     border-radius: 12px 12px 0 0 !important;
     color: var(--branco) !important;
 }
 
 #limao-divs{
-    background-color: #bba1c4;
+    background-color: #b343d5;
 }
 
 .produto__btn {
     box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
-    background-color: #bba1c4;
+    background-color: #b343d5;
     padding: 1em;
     border-radius: 8px;
-    border: 2px solid #bba1c4;
+    border: 2px solid #b343d5;
     width: 50%;
 }
 
