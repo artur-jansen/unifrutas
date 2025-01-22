@@ -1,4 +1,4 @@
-.container__topo-gengibre {
+.container__topo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@
     color: var(--branco) !important;
 }
 
-#gengibre-divs{
+#limao-divs{
     background-color: #D09D73;
 }
 
@@ -39,5 +39,5 @@
 .produto__btn:focus {
     transition: 1s;
     transform: scale(1.01);
-    background-color: #78a021;
+    background-color: #a37b5a;
 }

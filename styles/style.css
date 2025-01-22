@@ -56,6 +56,7 @@ main {
 }
 
 .whatsApp {
+    animation: mover 2s infinite ease-in-out;
     background-color: #25D366;
     color: #ffffff;
     border: transparent;
@@ -216,7 +217,8 @@ section {
     text-decoration: none;
 }
 
-.home__cta-baixo:hover, .home__cta-baixo:focus{
+.home__cta-baixo:hover,
+.home__cta-baixo:focus {
     transition: 1s;
     color: var(--laranja-claro);
 }
@@ -225,11 +227,13 @@ section {
     0% {
         transform: translateY(0);
     }
+
     50% {
-        transform: translateY(5px); 
+        transform: translateY(5px);
     }
+
     100% {
-        transform: translateY(0); 
+        transform: translateY(0);
     }
 }
 
@@ -282,25 +286,26 @@ section {
     width: 40%;
 }
 
-.sobre__paragrafos{
+.sobre__paragrafos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.sobre__p1, .sobre__p2 {
+.sobre__p1,
+.sobre__p2 {
     padding: 1em;
     border-radius: 12px;
     box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
     color: var(--branco);
 }
 
-.sobre__p1{
+.sobre__p1 {
     background-color: var(--verde-escuro);
 }
 
-.sobre__p2{
+.sobre__p2 {
     background-color: var(--laranja-escuro);
 }
 
@@ -356,9 +361,18 @@ section {
     transition: 1s;
     transform: scale(1.01);
     background-color: #d24212;
+    border: 2px solid #25D366;
 }
 
-.sobre__container h3{
+.sobre2__btn:hover .sobre2__btn-link {
+    color: #25D366;
+}
+
+.sobre2__btn:focus .sobre2__btn-link {
+    color: #25D366;
+}
+
+.sobre__container h3 {
     background: var(--branco);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -384,7 +398,7 @@ section {
     gap: 2em;
 }
 
-.sobre__card img{
+.sobre__card img {
     width: 90%;
 }
 
@@ -480,7 +494,7 @@ section {
     justify-content: space-between;
 }
 
-#prTotal img{
+#prTotal img {
     width: 30%;
 }
 
@@ -489,8 +503,12 @@ section {
     flex-direction: row-reverse;
 }
 
-.produtos__branco div{
+.produtos__branco div {
     align-items: end;
+}
+
+.produtos__pr5{
+    background: linear-gradient(to bottom, #04cd26 0%, #b603ec 100%);
 }
 
 .produtos__div {
@@ -532,7 +550,7 @@ section {
     color: var(--branco);
 }
 
-.limaoTahiti-h3{
+.limaoTahiti-h3 {
     background: linear-gradient(to bottom, #8FBF2A 0%, #066129 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -540,20 +558,20 @@ section {
     text-align: end;
 }
 
-.limaoTahiti-p{
+.limaoTahiti-p {
     color: #8FBF2A;
     text-align: end;
 }
 
-#btn__limaoTahiti{
+#btn__limaoTahiti {
     border: 2px solid #8FBF2A;
 }
 
-#btn__limaoTahiti-link{
+#btn__limaoTahiti-link {
     color: #8FBF2A;
 }
 
-.gengibre-h3{
+.gengibre-h3 {
     background: linear-gradient(to bottom, #D09D73 0%, #AC643D 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
@@ -561,16 +579,16 @@ section {
     text-align: end;
 }
 
-.gengibre-p{
+.gengibre-p {
     color: #D09D73;
     text-align: end;
 }
 
-#btn__gengibre{
+#btn__gengibre {
     border: 2px solid #D09D73;
 }
 
-#btn__gengibre-link{
+#btn__gengibre-link {
     color: #D09D73;
 }
 
@@ -781,10 +799,11 @@ section {
 }
 
 @media (max-width: 920px) {
+
     /* HOME */
     /* HOME */
     /* HOME */
-    .home__titulo{
+    .home__titulo {
         font-size: 2.3em;
     }
 
@@ -795,11 +814,11 @@ section {
         flex-direction: column;
     }
 
-    .sobre__div-cards{
+    .sobre__div-cards {
         flex-direction: column;
     }
 
-    .sobre__img{
+    .sobre__img {
         width: 60%;
     }
 
@@ -819,19 +838,24 @@ section {
     /* PRODUTOS */
     /* PRODUTOS */
     /* PRODUTOS */
-    #prTotal img{
+    #prTotal img {
         width: 50%;
     }
 
-    #prTotal, .produtos__branco {
+    #prTotal,
+    .produtos__branco {
         flex-direction: column-reverse;
     }
 
-    .produtos__div, .produtos__branco div, #prTotal{
+    .produtos__div,
+    .produtos__branco div,
+    #prTotal {
         align-items: center;
     }
 
-    .limaoTahiti-h3, .limaoTahiti-p, #prTotal p{
+    .limaoTahiti-h3,
+    .limaoTahiti-p,
+    #prTotal p {
         text-align: center;
     }
 
@@ -846,7 +870,7 @@ section {
     /* CONTATO */
     /* CONTATO */
     /* CONTATO */
-    .contato__infos-baixo{
+    .contato__infos-baixo {
         text-align: center;
     }
 }
@@ -860,7 +884,7 @@ section {
         align-items: center;
     }
 
-    .home__div{
+    .home__div {
         align-items: center;
         padding: 0 2em;
     }
@@ -880,7 +904,7 @@ section {
         padding: 0.5em;
     }
 
-    .home__cta-baixo{
+    .home__cta-baixo {
         font-size: 1.5em;
         bottom: 15px;
     }
@@ -917,24 +941,26 @@ section {
         font-size: 1em;
     }
 
-    .sobre1__btn, .sobre2__btn{
+    .sobre1__btn,
+    .sobre2__btn {
         padding: 0.5em;
     }
 
     /* PRODUTOS */
     /* PRODUTOS */
     /* PRODUTOS */
-    #prTotal{
+    #prTotal {
         padding: 2em 2em;
     }
 
-    .produtos__div{
+    .produtos__div {
         width: 100%;
     }
 
-    .produto__btn{
+    .produto__btn {
         padding: 0.5em;
     }
+
     /* LOGISTICA */
     /* LOGISTICA */
     /* LOGISTICA */
@@ -971,15 +997,15 @@ section {
     /* CONTATO */
     /* CONTATO */
     /* CONTATO */
-    .contato__banner{
+    .contato__banner {
         width: 100%;
     }
 
-    .contato__infos_cima{
+    .contato__infos_cima {
         flex-direction: column;
     }
 
-    .contato__info{
+    .contato__info {
         font-size: 1em;
     }
 }
