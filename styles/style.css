@@ -507,7 +507,11 @@ section {
     align-items: end;
 }
 
-.produtos__pr5{
+.produtos__pr3{
+    background: linear-gradient(to bottom, #8FBF2A 0%, #066129 100%);
+}
+
+.produtos__pr4{
     background: linear-gradient(to bottom, #b343d5 0%, #c97ae1 100%);
 }
 
@@ -550,25 +554,25 @@ section {
     color: var(--branco);
 }
 
-.limaoTahiti-h3 {
-    background: linear-gradient(to bottom, #8FBF2A 0%, #066129 100%) !important;
+.mangaRosa-h3 {
+    background: linear-gradient(to bottom, #E84E1B 0%, #FBB040 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     color: transparent !important;
     text-align: end;
 }
 
-.limaoTahiti-p {
-    color: #8FBF2A;
+.mangaRosa-p {
+    color: #E84E1B;
     text-align: end;
 }
 
-#btn__limaoTahiti {
-    border: 2px solid #8FBF2A;
+#btn__mangaRosa {
+    border: 2px solid #E84E1B;
 }
 
-#btn__limaoTahiti-link {
-    color: #8FBF2A;
+#btn__mangaRosa-link {
+    color: #E84E1B;
 }
 
 .gengibre-h3 {
