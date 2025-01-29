@@ -552,7 +552,7 @@ section {
     width: 50%;
 }
 
-.produto__btn-link {
+.produto__btn-link, .produto__btnlinkIndex {
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
@@ -725,7 +725,7 @@ section {
     border: 2px solid var(--laranja-escuro);
     border-radius: 6px;
     padding: 0.5em;
-    height: 250px;
+    height: 200px;
     max-height: 100%;
 }
 
