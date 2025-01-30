@@ -64,7 +64,7 @@ const translations = {
     nav__4: "Logística",
     nav__5: "Garantias",
     nav__6: "Contato",
-    home__1: "<span>Unifrutas:</span> Conectando o Melhor do Brasil ao Mundo",
+    home__span: "Conectando o Melhor do Brasil ao Mundo",
     home__2: "Na Unifrutas, unimos qualidade, sustentabilidade e eficiência para levar o sabor e a riqueza do Brasil aos mercados internacionais, sem deixar de atender com excelência o mercado nacional.",
     home__3: "QUERO EXPORTAR",
     sobre__1: "QUEM SOMOS",
@@ -295,7 +295,7 @@ const translations = {
     nav__4: "Logistics",
     nav__5: "Guarantees",
     nav__6: "Contact",
-    home__1: "<span>Unifrutas:</span> Connecting the Best of Brazil to the World",
+    home__span: "Connecting the Best of Brazil to the World",
     home__2: "At Unifrutas, we combine quality, sustainability, and efficiency to bring the flavor and richness of Brazil to international markets, while also providing excellent service to the domestic market.",
     home__3: "I WANT TO EXPORT",
     sobre__1: "WHO WE ARE",
@@ -527,7 +527,7 @@ const translations = {
     nav__4: "Logística",
     nav__5: "Garantías",
     nav__6: "Contacto",
-    home__1: "<span>Unifrutas:</span> Conectando lo Mejor de Brasil al Mundo",
+    home__span: "Conectando lo Mejor de Brasil al Mundo",
     home__2: "En Unifrutas, unimos calidad, sostenibilidad y eficiencia para llevar el sabor y la riqueza de Brasil a los mercados internacionales, sin dejar de atender con excelencia el mercado nacional.",
     home__3: "QUIERO EXPORTAR",
     sobre__1: "QUIÉNES SOMOS",
@@ -764,16 +764,17 @@ function changeLanguage(language) {
     const elements = document.querySelectorAll(`#${key}, .${key}`); // Seleciona por ID ou classe
 
     elements.forEach(element => {
-      if (element.tagName === 'A') {
-        element.textContent = value; // Atualiza o texto do link
-      } else if (element.tagName === 'BUTTON') {
-        const link = element.querySelector('a');
-        if (link) {
-          link.textContent = value; // Atualiza o texto do link dentro do botão
+      // Verifica se o texto precisa ser atualizado
+      if (element.textContent.trim() !== value) {
+        if (element.tagName === 'BUTTON' || element.tagName === 'A') {
+          element.textContent = value; // Atualiza o texto do botão ou link
+        } else {
+          element.textContent = value; // Atualiza o texto de outros elementos
         }
-      } else {
-        element.textContent = value;
       }
     });
   });
 }
+
+// Exemplo de uso
+changeLanguage('pt');

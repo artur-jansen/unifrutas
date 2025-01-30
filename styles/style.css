@@ -168,8 +168,12 @@ section {
     width: 80%;
 }
 
-.home__titulo span {
+.home__titulo-span {
     color: var(--laranja-escuro);
+}
+
+.home__span{
+    color: var(--branco);
 }
 
 .home__p {
