@@ -269,6 +269,7 @@ main {
     color: var(--branco);
     font-weight: bold;
     font-size: 1em;
+    text-align: center;
 }
 
 @media (max-width: 920px) {

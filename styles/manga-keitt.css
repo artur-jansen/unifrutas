@@ -26,17 +26,18 @@
     background-color: var(--laranja-escuro);
 }
 
-.produto__btn {
+.produto__btn-link {
     box-shadow: 1px 5px 15px 1px rgba(0, 0, 0, 0.33);
     background-color: var(--laranja-escuro);
     padding: 1em;
     border-radius: 8px;
     border: 2px solid var(--laranja-escuro);
     width: 50%;
+    text-align: center;
 }
 
-.produto__btn:hover,
-.produto__btn:focus {
+.produto__btn-link:hover,
+.produto__btn-link:focus {
     transition: 1s;
     transform: scale(1.01);
     background-color: #d24212;

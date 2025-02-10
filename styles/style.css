@@ -79,18 +79,6 @@ main {
     background-color: #ffffff;
 }
 
-.whatsApp-link {
-    text-decoration: none;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.whatsApp:hover .whatsApp-link {
-    color: #25D366;
-}
-
 .voltarTopo {
     display: none;
     border: 2px solid var(--laranja-escuro);
@@ -114,16 +102,8 @@ main {
     border: 2px solid var(--laranja-escuro);
 }
 
-.voltarTopo-link {
-    text-decoration: none;
-    color: var(--branco);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.voltarTopo:hover .voltarTopo-link {
-    color: var(--laranja-escuro);
+.voltarTopo:hover i {
+    color: var(--laranja-escuro); 
 }
 
 .voltarTopo.scrolled {
@@ -140,7 +120,7 @@ section {
 /* HOME */
 
 #home {
-    background-image: url(../assets/home.png);
+    background-image: url(../assets/home);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,6 +130,17 @@ section {
     align-items: left;
     justify-content: center;
     padding: 1em 2em;
+}
+
+#home__video {
+    position: absolute; /* Coloca o vídeo atrás do conteúdo */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra toda a seção */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Mantém o vídeo no fundo */
 }
 
 .home__div {
@@ -183,18 +174,17 @@ section {
 }
 
 .home__btn {
+    display: inline-block; 
     background-color: var(--laranja-escuro);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
     padding: 1em;
     border-radius: 8px;
     border: 2px solid var(--laranja-escuro);
     width: 30%;
-}
-
-.home__btn-link {
-    text-decoration: none;
-    color: var(--branco);
-    font-weight: bold;
-    font-size: 1em;
+    text-align: center; 
 }
 
 .home__btn:hover,
@@ -328,13 +318,11 @@ section {
     border-radius: 8px;
     border: 2px solid var(--laranja-escuro);
     width: 100%;
-}
-
-.sobre1__btn-link {
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
     font-size: 1em;
+    text-align: center;
 }
 
 .sobre1__btn:hover,
@@ -351,6 +339,11 @@ section {
     border-radius: 8px;
     border: 2px solid var(--branco);
     width: 100%;
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
 }
 
 .sobre2__btn-link {
@@ -364,16 +357,8 @@ section {
 .sobre2__btn:focus {
     transition: 1s;
     transform: scale(1.01);
-    background-color: #d24212;
-    border: 2px solid #25D366;
-}
-
-.sobre2__btn:hover .sobre2__btn-link {
-    color: #25D366;
-}
-
-.sobre2__btn:focus .sobre2__btn-link {
-    color: #25D366;
+    background-color: var(--verde-escuro);
+    border: 2px solid var(--laranja-escuro);
 }
 
 .sobre__container h3 {
@@ -548,23 +533,21 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
-.produto__btn {
+.produto__btnlinkIndex {
     background-color: transparent;
     padding: 1em;
     border-radius: 8px;
     border: 2px solid var(--branco);
     width: 50%;
-}
-
-.produto__btn-link, .produto__btnlinkIndex {
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
     font-size: 1em;
+    text-align: center;
 }
 
-.produto__btn:hover,
-.produto__btn:focus {
+.produto__btnlinkIndex:hover,
+.produto__btnlinkIndex:focus {
     transition: 1s;
     transform: scale(1.01);
     background-color: #ffffff2d;
@@ -584,11 +567,8 @@ section {
     text-align: end;
 }
 
-#btn__mangaRosa {
-    border: 2px solid #E84E1B;
-}
-
 #btn__mangaRosa-link {
+    border: 2px solid #E84E1B;
     color: #E84E1B;
 }
 
@@ -605,11 +585,8 @@ section {
     text-align: end;
 }
 
-#btn__gengibre {
-    border: 2px solid #D09D73;
-}
-
 #btn__gengibre-link {
+    border: 2px solid #D09D73;
     color: #D09D73;
 }
 
@@ -805,11 +782,12 @@ section {
     align-items: center;
     justify-content: center;
     color: var(--branco);
-    gap: 0.1em;
+    gap: 0.2em;
 }
 
 .contato__info p {
-    margin: 0;
+    margin-bottom: 0.1em;
+    color: var(--branco);
 }
 
 .contato__infos-baixo {
