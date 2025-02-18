@@ -120,16 +120,15 @@ section {
 /* HOME */
 
 #home {
-    background-image: url(../assets/home);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: border-box;
+    position: relative;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     padding: 1em 2em;
+    overflow: hidden;
 }
 
 #home__video {
@@ -141,6 +140,14 @@ section {
     object-fit: cover; /* Garante que o vídeo cubra toda a seção */
     transform: translate(-50%, -50%);
     z-index: -1; /* Mantém o vídeo no fundo */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro para melhor contraste */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .home__div {
@@ -885,6 +892,7 @@ section {
     /* HOME */
     #home {
         align-items: center;
+        padding: 1em 0;
     }
 
     .home__div {
@@ -909,7 +917,7 @@ section {
 
     .home__cta-baixo {
         font-size: 1.5em;
-        bottom: 10px;
+        bottom: 20px;
     }
 
     /* SOBRE */
