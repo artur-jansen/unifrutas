@@ -103,7 +103,7 @@ main {
 }
 
 .voltarTopo:hover i {
-    color: var(--laranja-escuro); 
+    color: var(--laranja-escuro);
 }
 
 .voltarTopo.scrolled {
@@ -132,20 +132,24 @@ section {
 }
 
 #home__video {
-    position: absolute; /* Coloca o vídeo atrás do conteúdo */
+    position: absolute;
+    /* Coloca o vídeo atrás do conteúdo */
     top: 50%;
     left: 50%;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que o vídeo cubra toda a seção */
+    object-fit: cover;
+    /* Garante que o vídeo cubra toda a seção */
     transform: translate(-50%, -50%);
-    z-index: -1; /* Mantém o vídeo no fundo */
+    z-index: -1;
+    /* Mantém o vídeo no fundo */
 }
 
 .content {
     position: relative;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.5); /* Fundo escuro para melhor contraste */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo escuro para melhor contraste */
     padding: 20px;
     border-radius: 10px;
 }
@@ -170,7 +174,7 @@ section {
     color: var(--laranja-escuro);
 }
 
-.home__span{
+.home__span {
     color: var(--branco);
 }
 
@@ -181,7 +185,7 @@ section {
 }
 
 .home__btn {
-    display: inline-block; 
+    display: inline-block;
     background-color: var(--laranja-escuro);
     color: var(--branco);
     text-decoration: none;
@@ -191,7 +195,7 @@ section {
     border-radius: 8px;
     border: 2px solid var(--laranja-escuro);
     width: 30%;
-    text-align: center; 
+    text-align: center;
 }
 
 .home__btn:hover,
@@ -262,7 +266,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 2em;
+    padding: 0 2em 2em 2em;
     gap: 4em;
 }
 
@@ -393,7 +397,7 @@ section {
     width: 25%;
 }
 
-.sobre__card-baixo{
+.sobre__card-baixo {
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -476,6 +480,92 @@ section {
     height: 100px;
 }
 
+/* BANNER */
+/* BANNER */
+/* BANNER */
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../assets/banner-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.banner__titulo {
+    margin: 2em 0;
+    background: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
+.banner__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2em;
+}
+
+.banner__esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.banner__esquerda-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1em;
+}
+
+.banner__esquerda-info-p {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 2em;
+    color: var(--branco);
+    font-weight: bold;
+}
+
+.banner__direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner__direita img {
+    width: 50%;
+    height: 100%;
+}
+
+.banner__rodape {
+    background-color: #004938;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.banner__barrinha {
+    width: 2px;
+    background-color: var(--branco);
+    height: 100px;
+}
+
 /* PRODUTOS */
 /* PRODUTOS */
 /* PRODUTOS */
@@ -516,11 +606,11 @@ section {
     align-items: end;
 }
 
-.produtos__pr3{
+.produtos__pr3 {
     background: linear-gradient(to bottom, #8FBF2A 0%, #066129 100%);
 }
 
-.produtos__pr4{
+.produtos__pr4 {
     background: linear-gradient(to bottom, #b343d5 0%, #c97ae1 100%);
 }
 
@@ -792,8 +882,15 @@ section {
     gap: 0.2em;
 }
 
-.contato__info p {
-    margin-bottom: 0.1em;
+.contato__info button {
+    margin-bottom: 0.3em;
+    color: var(--branco);
+    background-color: transparent;
+    border: none;
+}
+
+.contato__info p{
+    margin-bottom: 0.3em;
     color: var(--branco);
 }
 
@@ -832,7 +929,7 @@ section {
         width: 60%;
     }
 
-    .sobre__card{
+    .sobre__card {
         width: 50%;
     }
 
@@ -843,6 +940,57 @@ section {
     .barrinha {
         height: 2px;
         width: 200px;
+    }
+
+    /* BANNER */
+    /* BANNER */
+    /* BANNER */
+    .banner__esquerda-info-p {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        gap: 0.5em;
+        font-size: 1.5em;
+        color: var(--branco);
+        font-weight: bold;
+    }
+
+    .banner__direita {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .banner__direita img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .banner__rodape {
+        background-color: #004938;
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .banner__rodape-fruitattraction {
+        width: 15%;
+        height: 100%;
+    }
+
+    .banner__rodape-fruix {
+        width: 5%;
+        height: 100%;
+    }
+
+    .banner__barrinha {
+        width: 2px;
+        background-color: var(--branco);
+        height: 50px;
     }
 
     /* PRODUTOS */
@@ -947,17 +1095,66 @@ section {
         width: 100%;
     }
 
-    .sobre__card-baixo h4{
+    .sobre__card-baixo h4 {
         font-size: 1.2em;
     }
 
-    .sobre__card-info p{
+    .sobre__card-info p {
         font-size: 1em;
     }
 
     .sobre1__btn,
     .sobre2__btn {
         padding: 0.5em;
+    }
+
+    /* BANNER */
+    /* BANNER */
+    /* BANNER */
+    .banner__container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 2em 2em 2em;
+        gap: 4em;
+    }
+
+    .banner__esquerda-info-p {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        gap: 0.5em;
+        font-size: 1.5em;
+        color: var(--branco);
+        font-weight: bold;
+    }
+
+    .banner__rodape {
+        background-color: #004938;
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .banner__barrinha {
+        width: 2px;
+        background-color: var(--branco);
+        height: 50px;
+    }
+
+    .banner__rodape-fruitattraction {
+        width: 35%;
+        height: 100%;
+    }
+
+    .banner__rodape-fruix {
+        width: 15%;
+        height: 100%;
     }
 
     /* PRODUTOS */
